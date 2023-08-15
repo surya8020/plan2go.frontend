@@ -6,7 +6,7 @@ const Banner = () => {
     const [cityNumber, setCityNumber] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [curCityText, setCurCityText] = useState('');
-    const defaultDelta = 150;
+    const defaultDelta = 100;
     const [delta, setDelta] = useState(defaultDelta); // interval for when ticker gets fired
     const [justCompleted, setJustCompleted] = useState(false)
 
