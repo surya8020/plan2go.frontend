@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Map from './components/Map';
+import NavBar from './components/NavBar';
+import Banner from './components/Banner';
+
+// function App() {
+//   return (
+//     <div className="app-container">
+//       <header className="app-header">
+//         Plan 2 Go
+//       </header>
+//       <div className="app-content">
+//         {/* <div className="content-pane">
+//           <p>This is the content pane.</p>
+//         </div> */}
+//         <div className="map-pane">
+//           <Map />
+//         </div>
+//       </div>
+//       <footer className="app-footer">
+//         <p>&copy; 2023 Plan2Go. All rights reserved.</p>
+//       </footer>
+//     </div>
+//   );
+// }
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Banner />
     </div>
+
   );
 }
 

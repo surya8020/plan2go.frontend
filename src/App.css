@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+Form Button {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #ffffff; /* Light text color */
+  font-size: 14px; /* Set the font size */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h6 {
+  color: greenyellow;
+}
+
+hr.line {
+  border: 1px solid #313131;
+  width: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* Light text color */
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cursor {
+  display: inline-block;
+  width: 0.9em; /* Adjust cursor width */
+  height: 1em; /* Adjust cursor height */
+  background-color: #ffffff; /* Cursor color */
+  animation: blink 1s infinite; /* Blinking animation */
+  font-weight:200; /* Adjust font weight */
+}
+
+.map-container {
+  width:100%;
+  height:100%;
+}
+/* Styles for the app-container */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles for the app-header */
+.app-header {
+  padding: 10px;
+  background-color: #0e0e0e; /* Slightly lighter header background color */
+  color: #ffffff; /* Light text color */
+  font-size: 22px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styles for the app-content container */
+.app-content {
+  display: flex;
+  flex-grow: 1;
+  background-color: #000000;
+}
+
+/* Styles for the content pane */
+.content-pane {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styles for the map pane */
+.map-pane {
+  flex: 1;
+  padding: 2px;
+}
+
+/* Styles for the app-footer */
+.app-footer {
+  padding: 5;
+  text-align: center;
+  background-color: #0e0e0e; /* Slightly lighter footer background color */
+  color: #ffffff; /* Light text color */
+}
+
+
+.chat {
+  display: grid;
+}
+
+.leave-room {
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.user-list {
+  float: left;
+  background-color: #313131;
+  color:white;
+  width: 200px;
+  height: 440px;
+  margin-right: 4px;
+}
+
+.message-container {
+  height: 70vh;    
+  background-color: white;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 2px;
+}
+
+.user-message {
+  text-align: right;
+  padding-right: 5px;
+  font-size: 18px;
+}
+
+.my-message {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.message {
+  display: inline-flex;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  font-size: 18px;
+  color:white;
+  border-radius: 20px;
+  margin-top: 3px;
+}
+
+.from-user {
+  font-size: small;
+  margin-bottom: 3px;
+  margin-right: 5px;
 }
